@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ZD Portfolio</title>
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200');
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body >
+<div id="container">
+  <div class="resume">
+    <div class="resume-logo">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  	       width="90px" viewBox="0 0 258.5 131" enable-background="new 0 0 258.5 131" xml:space="preserve">
+        <path fill="#FFFFFF" stroke="#000000" stroke-width="15" stroke-miterlimit="10" d="M14.5,16h113L20.453,123H127.5h60
+  	       c0,0,65.276-6,63.017-57s-46.326-53.795-60.451-55.25C179.33,20.595,121.5,79,121.5,79"/>
+      </svg>
+    </div>
+
+
+    <p class="resume-text">
+      [ I am an enthusiast who loves 21st century's witchery, also known as technology.
+      I love being creative and programming gives me the power to
+      bring my imagination to life. Enough talking, have fun reviewing my portfolio, my work, my geek places and other stuff. ]
+    </p>
+    <div id = "link-wrapper">
+        <a href="https://github.com/prayingdmantis"><img class="icon-logo" src="assets\imgs\link-icons\Octocat.png"></a>
+        <a href="https://jsfiddle.net/user/PrayingDMantis/fiddles/"><img class="icon-logo" src="assets\imgs\link-icons\jsfiddle.png"></a>
+        <a href="https://jsfiddle.net/user/PrayingDMantis/fiddles/"><img class="icon-logo" src="assets\imgs\link-icons\instructables-logo.png"></a>
+        <a href="https://jsfiddle.net/user/PrayingDMantis/fiddles/"><img class="icon-logo" src="assets\imgs\link-icons\hackster-logo.jpg"></a>
+        <a href="https://jsfiddle.net/user/PrayingDMantis/fiddles/"><img class="icon-logo" src="assets\imgs\link-icons\codepen-logo.png"></a>
+        <a href="https://jsfiddle.net/user/PrayingDMantis/fiddles/"><img class="icon-logo" src="assets\imgs\link-icons\Linkedin_circle.svg_.png"></a>
+    </div>
+
+  </div>
+
+  <div id ="menu">
+    <div class="r">
+      <img class="rect1" src="assets\imgs\home\rect.svg">
+    </div>
+
+    <div id="sd">
+      <button class = "burger-btn" type="button" name="burger-menu">
+        <img  class = "burger" src="assets\imgs\home\burger.svg" >
+      </button>
+    </div>
+
+    <div class="r2">
+      <img class="rect2" src="assets\imgs\home\rect.svg">
+    </div>
+  </div>
+
+  <div style="width:100%;margin-top:2%;">
+    <img class = "logo" src="assets\imgs\home\LOGO.svg" >
+  </div>
+  <div class = "menu-items">
+    <div class="items-box">
+
+      <div class="item">
+        <a id = "projects" class = "link-condition" href="projects.html">
+          <svg class="svg" width="120px" viewBox="0 0 254.875 256.498">
+          <rect x="3.973" y="3.954" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" width="246.929" height="245.764"/>
+          <rect x="3.973" y="99.416" fill="none" width="246.929" height="241.969"/>
+          <text transform="matrix(1 0 0 1 32 142)" fill="#FFFFFF" font-size="64">Projects</text>
+          </svg>
+        </a>
+      </div>
+    <div class="item">
+        <a id = "skills" class = "link-condition" href="skills.html">
+          <svg class="svg" width="120px"  viewBox="0 0 254.875 256.498">
+          <rect x="3.973" y="3.954" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" width="246.929" height="245.764"/>
+          <rect x="3.973" y="98.954" fill="none" width="246.929" height="245.764"/>
+          <text transform="matrix(1 0 0 1 62 145)" fill="#FFFFFF" font-size="64">Skills</text>
+          </svg>
+        </a>
+    </div>
+    <div class="item">
+          <a class = "skills" class = "link-condition" href="#about">
+            <svg class="svg" width="120px"  viewBox="0 0 254.875 256.498">
+            <rect x="3.973" y="3.954" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" width="246.929" height="245.764"/>
+            <rect x="3.973" y="98.954" fill="none" width="246.929" height="245.764"/>
+            <text transform="matrix(1 0 0 1 55 145)" fill="#FFFFFF" font-size="64">About</text>
+            </svg>
+          </a>
+      </div>
+
+
+    </div>
+  </div>
+  <div id = "quote-text">
+    <img class="left-quote" src="assets\imgs\home\left-quote.svg">
+    <span class = "l1" >coding  <br> &nbsp;&nbsp;&nbsp;&nbsp; is art</span>
+    <img class="right-quote" src="assets\imgs\home\right-quote.svg">
+  </div>
+
+
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+ $(".burger-btn").click(function(){
+   $( "#sd" ).toggleClass( "sd-clicked" );
+   $( ".burger" ).toggleClass( "burger-spin" );
+   $( ".link-condition" ).toggleClass( "enable-links" );
+   $( ".item" ).toggleClass( "enable-links" );
+	 $( ".item" ).toggleClass( "show-items" );
+ });
+});
+$(document).ready(function(){
+  $(".skills").click(function(){
+    $( ".resume" ).toggleClass( "show-resume" );
+   });
+});
+
+</script>
+
+  </body>
+</html>
