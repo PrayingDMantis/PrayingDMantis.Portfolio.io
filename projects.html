@@ -34,10 +34,9 @@
       <div id = "link-wrapper">
           <a href="https://github.com/prayingdmantis"><img class="icon-logo" src="assets\imgs\link-icons\Octocat.png"></a>
           <a href="https://jsfiddle.net/user/PrayingDMantis/fiddles/"><img class="icon-logo" src="assets\imgs\link-icons\jsfiddle.png"></a>
-          <a href="https://jsfiddle.net/user/PrayingDMantis/fiddles/"><img class="icon-logo" src="assets\imgs\link-icons\instructables-logo.png"></a>
-          <a href="https://jsfiddle.net/user/PrayingDMantis/fiddles/"><img class="icon-logo" src="assets\imgs\link-icons\hackster-logo.jpg"></a>
-          <a href="https://jsfiddle.net/user/PrayingDMantis/fiddles/"><img class="icon-logo" src="assets\imgs\link-icons\codepen-logo.png"></a>
-          <a href="https://jsfiddle.net/user/PrayingDMantis/fiddles/"><img class="icon-logo" src="assets\imgs\link-icons\Linkedin_circle.svg_.png"></a>
+          <a href="https://www.instructables.com/member/no_robot/"><img class="icon-logo" src="assets\imgs\link-icons\instructables-logo.png"></a>
+          <a href="https://www.hackster.io/zdimitriadis"><img class="icon-logo" src="assets\imgs\link-icons\hackster-logo.jpg"></a>
+          <a href="https://www.linkedin.com/in/zdimitriadis/"><img class="icon-logo" src="assets\imgs\link-icons\Linkedin_circle.svg_.png"></a>
       </div>
 
     </div>
@@ -67,7 +66,7 @@
       <div class="items-box">
 
         <div class="item">
-            <a id = "" class = "link-condition" href="https://prayingdmantis.github.io/PrayingDMantis.Portfolio.io/home.html">
+            <a id = "" class = "link-condition" href="home.html">
               <svg class="svg" width="120px"  viewBox="0 0 254.875 256.498">
               <rect x="3.973" y="3.954" fill="none" stroke="#000000" stroke-width="5" stroke-miterlimit="10" width="246.929" height="245.764"/>
               <rect x="3.973" y="98.954" fill="none" width="246.929" height="245.764"/>
@@ -76,7 +75,7 @@
             </a>
         </div>
         <div class="item">
-          <a class = "link-condition" href="https://prayingdmantis.github.io/PrayingDMantis.Portfolio.io/skills.html">
+          <a class = "link-condition" href="skills.html">
             <svg class="svg" width="120px" viewBox="0 0 254.875 256.498">
             <rect x="3.973" y="3.954" fill="none" stroke="#000000" stroke-width="5" stroke-miterlimit="10" width="246.929" height="245.764"/>
             <rect x="3.973" y="99.416" fill="none" width="246.929" height="241.969"/>
@@ -95,9 +94,65 @@
           </div>
 
       </div>
+      <div id="display-container">
+        <div class="display-by-date">
+          <table class="data-table-by-date">
+            <tr>
+              <td>2012</td>
+              <td>&#x2022;</td>
+              <td class="project-item-1">Hellenic GameJam</td>
+            </tr>
+            <tr>
+              <td>2013</td>
+              <td>&#x2022;</td>
+              <td>Global GameJam</td>
+            </tr>
+            <tr>
+              <td>2013</td>
+              <td>&#x2022;</td>
+              <td>Hellenic GameJam</td>
+            </tr>
+            <tr>
+              <td>2014</td>
+              <td>&#x2022;</td>
+              <td>Android App, Λέξις</td>
+            </tr>
+            <tr>
+              <td>2017</td>
+              <td>&#x2022;</td>
+              <td>Εφαρμογή Κ.Ο.Δ</td>
+            </tr>
+          </table>
+
+        </div>
+
+        <div class="display-by-category">
+          Games
+          Apps
+          Desktop Apps
+        </div>
+      </div>
+        <div id="overlay">
+
+        <div class="project-1">
+        
+        </div>
+        <div class="project-2">
+
+        </div>
+        <div class="project-3">
+
+        </div>
+        <div class="project-3">
+
+        </div>
+        <div class="project-3">
+
+        </div>
+      </div>
     </div>
 
-        <div id = "bracket-container">
+        <!--div id = "bracket-container">
           <div class="bracket-box">
             <svg class="bracket" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              width="92px" height="60px" viewBox="0 0 92 395" enable-background="new 0 0 92 395" xml:space="preserve">
@@ -139,24 +194,9 @@
             </svg>
 
           </div>
-        </div>
+        </div-->
 
-<div id="">
-  <div class="display-by-date">
-    2012 - Hellenic GameJam
-    2013 - Global GameJam
-    2013 - Hellenic GameJam
-    2014 - Android App, Λέξις
-    2017 - Εφαρμογή Κ.Ο.Δ
 
-  </div>
-  <div class="display-by-category">
-    Games
-    Apps
-    Desktop Apps
-
-  </div>
-</div>
 
 
       </div>
@@ -179,12 +219,17 @@
                 $( ".resume" ).toggleClass( "show-resume" );
                });
             });
-          /*  $(".left-bullet").click(function(){
+            $(".left-bullet").click(function(){
               $( ".display-by-date" ).toggleClass( "display-bullet" );
              });
              $(".right-bullet").click(function(){
                $( ".display-by-category" ).toggleClass( "display-bullet" );
-             });*/
+             });
+
+             $(".project-item-1").click(function(){
+               $( ".project-1" ).toggleClass( "show-project" );
+             });
+
 
             </script>
 
