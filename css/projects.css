@@ -230,7 +230,7 @@ html {
     transition: opacity 0.5s;
 }
 
-.bullet .bullet-text::after {
+.bullet .bullet-text:after {
     content: "";
     position: absolute;
     top: 100%;
@@ -245,9 +245,18 @@ html {
     visibility: visible;
     opacity: 1;
 }
+#display-container {
+  width: 100%;
+  height: 100%;
+  margin-top: 3%;
+  text-align: center;
+}
+#display-container td {
+  text-align: left;
+}
 
 .display-by-date {
-  display:none;
+  display:inline-block;
 }
 .display-by-category{
   display:none;
@@ -255,7 +264,9 @@ html {
 .display-bullet {
   display: inline-block;
 }
-
+.data-table-by-date {
+  font-size: 24px;
+}
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(90deg);  margin-left: 15px; } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(90deg);  margin-left: 15px; } }
