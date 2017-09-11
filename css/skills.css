@@ -294,3 +294,43 @@ table {
 @-moz-keyframes spin { 100% { -moz-transform: rotate(90deg);  margin-left: 15px; } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(90deg);  margin-left: 15px; } }
 @keyframes spin { 100% { -webkit-transform: rotate(90deg); transform:rotate(90deg);  margin-left: 15px; } }
+@media only screen and (max-width: 1800px) {
+    /* For mobile phones: */
+    .rect1 {
+      width:700px;
+    }
+    .rect2 {
+      width:700px;
+    }
+
+}
+@media only screen and (max-width: 1500px) {
+    /* For mobile phones: */
+    .rect1 {
+      width:600px;
+    }
+    .rect2 {
+      width:600px;
+    }
+
+}
+@media only screen and (max-width: 1300px) {
+    /* For mobile phones: */
+    .rect1 {
+      width:400px;
+    }
+    .rect2 {
+      width:400px;
+    }
+
+}
+@media only screen and (max-width: 1000px) {
+    /* For mobile phones: */
+    .rect1 {
+      width:300px;
+    }
+    .rect2 {
+      width:300px;
+    }
+
+}
