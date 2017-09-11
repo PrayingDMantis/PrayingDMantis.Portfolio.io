@@ -47,7 +47,7 @@ body,html {
   height: 10px;
   background-color: #eaeaea;
   float: left;
-  box-shadow: 0 0 14px #fff;
+
 
 }
 .rect2 {
@@ -55,7 +55,7 @@ body,html {
   height: 10px;
   background-color: #eaeaea;
   float: right;
-  box-shadow: 0 0 14px #fff;
+  
 }
 
 .burger-btn {
