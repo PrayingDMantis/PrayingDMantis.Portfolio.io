@@ -46,14 +46,12 @@ html {
   height: 7px;
   background-color: #000;
   float: left;
-  box-shadow: 0 0 8px #000;
 }
 .rect2 {
   width: 880px;
   height: 7px;
   background-color: #000;
   float: right;
-  box-shadow: 0 0 8px #000;
 }
 .burger-btn {
     background-color: Transparent;
