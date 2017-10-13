@@ -264,6 +264,13 @@ html {
   background-color: #e42424;
   vertical-align: middle;
 }
+.python-color {
+  width: 50px;
+  height: 10px;
+  display: inline-block;
+  background-color: #F0D767;
+  vertical-align: middle; 
+}
 .mysql-color {
   width: 50px;
   height: 10px;
