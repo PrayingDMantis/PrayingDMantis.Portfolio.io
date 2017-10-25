@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>README</title>
+<link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css" />
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body><div class="container"><h1 id="stackstatspy">stackstats.py</h1>
+
+<p>The objective of this simple application is to retrieve data from stackoverflow’s API, calculate some simple statistics and show them to the user as HTML or JSON format. Since an OAuth key is not used stackoverflow responses to our requests with a portion of data and a maximum of 300 requests daily.</p>
+
+
+
+<h2 id="installation">Installation</h2>
+
+<p>In order to run the application, Python 2.7 version at least is needed installed in your machine. To download the latest version go to:</p>
+
+<ul>
+<li>For Windows users (<a href="https://www.python.org/downloads/windows/">https://www.python.org/downloads/windows/</a>)</li>
+<li>For Mac users (<a href="https://www.python.org/downloads/mac-osx/">https://www.python.org/downloads/mac-osx/</a>)</li>
+<li><p>For other platforms (<a href="https://www.python.org/download/other/">https://www.python.org/download/other/</a>)</p>
+
+<ul><li>After installing Python  Python should be linked in <code>System variables</code> or <code>Enviroment variables</code>. </li></ul></li>
+</ul>
+
+<p>If python is installed correctly after typing <code>python --version</code> in cmd or terminal, the current version of python version should be returned in your screen(e.g below).</p>
+
+<p><img src="md_png\python_console_version.png" alt="pic1" title=""></p>
+
+
+
+<h3 id="other-requirements">Other requirements</h3>
+
+<p>Standard python build-in libraries are used and there is no need for more modules to be installed.</p>
+
+
+
+<h2 id="running-the-application">Running the application</h2>
+
+<p>To run the application open your terminal and use <code>cd</code> command to change to the same directory where the application is lives(e.g below).</p>
+
+<p><img src="md_png\full_path_of_stackstats.png" alt="pic2" title=""></p>
+
+
+
+<h3 id="basic-syntax"><strong><em>Basic Syntax</em></strong></h3>
+
+<p>In order to use stackstats.py correctly a specific syntax has to be followed. Syntax for stackstats.py  is <code>stackstats.py --since &lt;date&gt; --until &lt;date&gt; [--output-format JSON or HTML]</code></p>
+
+<p><strong>until:</strong> expects the user to input the starting point date to search in the API. Date must follow the Year-Month-Day format</p>
+
+<p><strong>since:</strong> expects the user to input the ending point date to search in the API. Date must follow the Year-Month-Day format</p>
+
+<p><strong>output-format:</strong> is optional and it is not necessary to run the application. Expects JSON or HTML format in order to output the result.</p>
+
+<p><strong>Example-&gt;</strong> <br>
+<img src="md_png\stackstats_syntax.png" alt="pic3" title=""></p>
+
+<hr>
+
+
+
+<h3 id="show-help"><strong><em>Show Help</em></strong></h3>
+
+<p><strong>h:</strong> Syntax <code>stackstats.py -h</code>. Shows <strong>Basic Syntax</strong></p>
+
+<p><strong>Example-&gt;</strong></p>
+
+<p><img src="md_png\stackstats_help.png" alt="pic4" title=""></p>
+
+<hr>
+
+
+
+<h4 id="if-any-argument-is-missing-or-is-not-written-correctly-an-exception-will-be-printed-in-the-console">If any argument is missing or is not written correctly an exception will be printed in the console.</h4>
+
+
+
+<h2 id="running-the-tests">Running the tests</h2>
+
+<p>4 Tests are implemented to check if the Algorithms in the script are running correctly. Similar data like the responsed data of the API have been used to check the correctness of the algorithms. To run the tests, open your terminal/cmd and change to its directory using <code>cd</code> shell command. Then to compile and execute it, run <code>test_stackstats.py</code> command as shown below. The results to be expected are 4 dots which means that they passed the tests successfully. If any of the tests fails, a ‘F’ letter will be shown.</p>
+
+<ol>
+<li>First test assures us with the number of the correct answers that should be returned</li>
+<li>Second one checks the total score of all the answers the data contains.</li>
+<li>Third test checks if the top ten answers are returned according to their top score. Also counts their respective comments and the id of the answers.</li>
+<li>Last but not least, this test takes 2 different dates that resemble the value thats its passed on the <code>--since</code> and <code>--until</code> arguments. Then it checks if they are converted correctly in UTC epoch time, which also reassures the validity of the data to be returned.</li>
+</ol>
+
+<p><img src="md_png\test_stackstats.png" alt="pic5" title=""></p></div></body>
+</html>
